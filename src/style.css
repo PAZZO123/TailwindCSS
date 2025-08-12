@@ -1,1 +1,13 @@
 @import "tailwindcss";
+.btnp{
+    @apply  focus:outline-none focus:ring focus:ring-offset-2 focus:ring-red-500 
+     hover:bg-blue-400 transform hover:-translate-y-0.5 transition inline-block px-5 
+     py-3 text-white bg-indigo-500  rounded-lg shadow-lg 
+     uppercase tracking-wider text-sm sm:text-base
+}
+.btns{
+    @apply  focus:outline-none focus:ring focus:ring-offset-2 focus:ring-red-500  
+    hover:bg-gray-500 inline-block px-5 
+    py-3 text-gray-800 bg-gray-400  rounded-lg shadow-lg uppercase tracking-wider
+     text-sm sm:text-base
+}
