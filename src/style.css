@@ -8,6 +8,6 @@
 .btns{
     @apply  focus:outline-none focus:ring focus:ring-offset-2 focus:ring-red-500  
     hover:bg-gray-500 inline-block px-5 
-    py-3 text-gray-800 bg-gray-400  rounded-lg shadow-lg uppercase tracking-wider
+    py-3 text-gray-800 bg-green-300  rounded-lg shadow-lg uppercase tracking-wider
      text-sm sm:text-base
 }
