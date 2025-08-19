@@ -7,15 +7,15 @@
     <title>Vite App</title>
     <link rel="stylesheet" href="./src/style.css">
   </head>
-  <body class="bg-gray-900 sm:">
+  <body class="bg-gray-900 mask-b-from-0.55">
    <div class="grid grid-cols-2 2xl:grid-cols-5">
 
     <div class="px-8 py-12  mx-auto col-span-2 max-w-md sm:max-w-xl sm:col-span-2 lg:max-w-full lg:col-span-1 xl:mr-0  2xl:col-span-2">
       <div class="xl:max-w-xl">
      <img class="h-12" src="src/Images/logo.svg" alt="">
  
-   <img class="mt-1 rounded-xl shadow-xl sm:h-64 w-full sm:object-cover object-center lg:hidden" src="src/Images/beach-work.jpg" alt=" someone on workcation">
-   <h1 class="mt-6 font-bold text-2xl text-grey-900 sm:text-4xl lg:text-3xl text-justify">You can work from anywhere.<br class="hidden lg:inline"> <span class="text-indigo-500">Take advantage of it.</span></h1>
+   <img class="mask-r-from-90% mask-radial-at-bottom mask-l-from-90% mask-t-from-90% mask-b-from-90%  mt-1 rounded-xl shadow-xl sm:h-64 w-full sm:object-cover object-center lg:hidden" src="src/Images/beach-work.jpg" alt=" someone on workcation">
+   <h1 class="mt-6 font-bold text-2xl text-grey-900 sm:text-4xl lg:text-3xl text-justify text-shadow-2xs">You can work from anywhere.<br class="hidden lg:inline"> <span class="text-indigo-500 text-shadow-lg text-shadow-gray-400/100">Take advantage of it.</span></h1>
    <p class="mt-2 text-gray-600 sm:mt-4 text-xl line-clamp-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.</p>
   <div class="mt-4 space-x-1">
       <a class="btnp active:bg-gray-500 " href="#">book your escape</a>  
@@ -26,10 +26,72 @@
       <script type="module" src="/src/main.js"></script>
     <div class=" relative  hidden lg:block  2xl:col-span-3">
         
-   <img class=" absolute insert-0 object-cover h-full w-full object-center " src="src/Images/beach-work.jpg" alt=" someone on workcation">
+   <img class=" absolute insert-0  h-full w-full object-center mask-t-from-50% " src="src/Images/beach-work.jpg" alt=" someone on workcation">
       </div>
    </div>
-  
+   <div class="flex justify-center flex-grow-1 flex-shrink-1 mt-6">
+       <table border="1" class=" border-2 border-solid border-gray-200 w-6/8">
+       <thead class="text-white">
+         <tr><th class=" py-3 bg-gray-800">SN</th> 
+        <th class=" py-3 bg-gray-800">Names</th>
+      <th class=" py-3 bg-gray-800">Locations</th>
+         <th class=" py-3 bg-gray-800 ">Email</th></tr>
+ 
+       </thead>
+       <tbody>
+          <tr class="bg-gray-300 cursor-pointer duration-300 font-bold"><td class=" px-6 py-3 ">1</td> 
+        <td class="px-6 py-3">Mbabazi Patrick</td>
+      <td class=" px-6 py-3">Gisozi</td>
+    <td class=" px-6 py-3">smbabazipatrick@gmail.com</td></tr>
+    <tr class="bg-gray-400 cursor-pointer duration-300 font-bold"><td class=" px-6 py-3 ">2</td> 
+        <td class="px-6 py-3">Mbabazi Patrick</td>
+      <td class=" px-6 py-3">Gisozi</td>
+    <td class=" px-6 py-3">smbabazipatrick@gmail.com</td></tr>
+    <tr class="bg-gray-500 cursor-pointer duration-300 font-bold"><td class=" px-6 py-3 ">3</td> 
+        <td class="px-6 py-3">Mbabazi Patrick</td>
+      <td class=" px-6 py-3">Gisozi</td>
+    <td class=" px-6 py-3">smbabazipatrick@gmail.com</td></tr>
+    <tr class="bg-gray-600 cursor-pointer duration-300 font-bold"><td class=" px-6 py-3 ">4</td> 
+        <td class="px-6 py-3">Mbabazi Patrick</td>
+      <td class=" px-6 py-3">Gisozi</td>
+    <td class=" px-6 py-3">smbabazipatrick@gmail.com</td></tr>
+       </tbody>
+      </table>
+
+   </div>
+
+ <label for="select" class="block text-sm font-medium text-blue-500">
+  Assigned to
+</label>
+
+<select id="select" name="selected" class="mt-2 block w-full rounded-md border border-gray-300 bg-white py-2 px-3 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm selection:bg-blue-500">
+  <option value="1" class="hover:bg-blue-500 cursor-pointer">Wade Cooper</option>
+  <option value="2" class="hover:bg-blue-500">Arlene Mccoy</option>
+  <option value="3" class="hover:bg-blue-500">Devon Webb</option>
+  <option value="4" selected class="hover:bg-blue-500">Courtney Henry</option>
+  <option value="5" class="hover:bg-blue-500">Tom Cook</option>
+</select>
+
+<div class="mx-8 my-12 grid grid-cols-3 grid-rows-3 gap-2 justify-center items-center h-full w-full">
+  <div class="bg-gray-100  px-9 py-12 border-2 border-gray-300 rounded-2xl *:w-full  row-span-2 h-full "><p>The best practices built-in to their <SignIn/> and <UserProfile/> components would take months to implement in-house, yet no sacrifice is made in terms of Enterprise extensibility or customization to your brand.</p></div>
+   <div class="bg-gray-100  px-9 py-12 border-2 border-gray-300 rounded-2xl h-full w-full   "><p>Clerk feels like the first time I booted my computer with an SSD. It’s so much faster and simpler that it changed how I do things.</p></div>
+   <div class="bg-gray-100  px-9 py-12 border-2 border-gray-300 rounded-2xl w-full   "><p>After spending many hours on auth issues that seemed simple (but were not), we moved to Clerk and all that burden was lifted. We kind of wish we’d made that decision earlier.</p></div>
+   <div class="bg-gray-100  px-9 py-12 border-2 border-gray-300 rounded-2xl w-full   "><p>Clerk let us spin up a new product in hours instead of weeks. As a company that deeply values developer velocity— Clerk is exactly what we needed.</p></div>
+   <div class="bg-blue-600  px-9 py-12 border-2 border-blue-300 rounded-2xl w-full  row-span-2 h-full  "><p>We’re big admirers of what the @ClerkDev team are building and looking forward to working more closely with them.
+
+Name
+Patrick Collison</p></div>
+    <div class="bg-gray-100  px-9 py-12 border-2 border-gray-300 rounded-2xl w-full   "><p>Clerk’s integration gives Supabase developers another incredible option for handling authentication. And the Clerk team are a pleasure to work with.
+
+Name
+Paul Copplestone</p></div>
+     <div class="bg-gray-100  px-9 py-12 border-2 border-gray-300 rounded-2xl w-full   "><p>We were able to ship MFA, SSO, and SAML for our customers in a fraction of the time. Now, we have improved security and must-haves for enterprise prospects.
+
+Name
+Dan Farrelly</p></div>
+</div>
+
+
   </body>
 </html>
 <!-- lg:px-12 py-24 -->

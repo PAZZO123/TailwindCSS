@@ -22,3 +22,29 @@ document.querySelector('#app').innerHTML = `
 `
 
 setupCounter(document.querySelector('#counter'))
+setupCounter(document.querySelector('#counter'))
+const toggleBtn = document.getElementById("dark-toggle");
+const root = document.documentElement; // <html> element
+
+// Load saved theme from localStorage
+if (localStorage.getItem("theme") === "dark") {
+  root.classList.add("dark");
+} else if (localStorage.getItem("theme") === "light") {
+  root.classList.remove("dark");
+} else {
+  // Default: follow system preference
+  if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+    root.classList.add("dark");
+  }
+}
+
+toggleBtn.addEventListener("click", () => {
+  root.classList.toggle("dark");
+
+  // Save theme choice
+  if (root.classList.contains("dark")) {
+    localStorage.setItem("theme", "dark");
+  } else {
+    localStorage.setItem("theme", "light");
+  }
+});
